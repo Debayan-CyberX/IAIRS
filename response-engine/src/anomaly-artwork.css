@@ -1,0 +1,54 @@
+.an-world{background:#080b0c;overflow:hidden}
+.an-world:after{display:none}
+.an-art{position:absolute;inset:0;will-change:opacity;pointer-events:none}
+.an-art picture{display:block;width:100%;height:100%}
+.an-artwork-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:3;pointer-events:none}
+.an-art img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transform:translate3d(var(--an-art-x,0px),var(--an-art-y,0px),0) scale(var(--an-art-scale,1.025));will-change:transform}
+.an-art-hero{opacity:var(--an-art-hero,1)}
+.an-art-metal{opacity:var(--an-art-metal,0)}
+.an-art-network{opacity:var(--an-art-network,0);clip-path:circle(var(--an-iris,0px) at var(--an-sx,65%) var(--an-sy,47%))}
+.an-art-response{opacity:var(--an-art-response,0)}
+.an-world-wash{background:linear-gradient(90deg,rgba(8,11,12,calc(var(--an-night,0)*.48)),rgba(8,11,12,calc(var(--an-night,0)*.08)) 57%,transparent);pointer-events:none}
+.an-dark{background:transparent}
+.an-field{mix-blend-mode:screen}
+.an-grid{opacity:.045}
+.an-grain{opacity:.025}
+.an-halftone{position:absolute;inset:0;z-index:9;pointer-events:none;opacity:var(--an-halftone,0);background-image:radial-gradient(circle,#e0c6a2 .6px,transparent .9px);background-size:4px 4px;mask-image:radial-gradient(ellipse at 53% 47%,#000,transparent 64%);mix-blend-mode:soft-light}
+.an-verdict .an-score output{display:block;transform:translate3d(0,calc((1 - var(--an-verdict,1))*20px),0) scaleX(calc(.94 + var(--an-verdict,1)*.06));transform-origin:left bottom;clip-path:inset(calc((1 - var(--an-verdict,1))*24%) 0 0 0)}
+.an-restoration h2{transform:perspective(1000px) rotateX(calc((1 - var(--an-reveal,1))*9deg)) translate3d(0,calc((1 - var(--an-reveal,1))*30px),0);transform-origin:left bottom;clip-path:inset(0 0 calc((1 - var(--an-reveal,1))*35%) 0)}
+.an-factor-meter i{transform:scaleX(var(--an-blueprint,1));transform-origin:left}
+.an-risk-evidence:before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(130deg,#ead5b40d,transparent 45%,#ead5b406);border-top:1px solid #ead5b429}
+.an-control-aside{color:#eee4d6;text-shadow:0 1px 15px #0008}
+.an-control-aside .an-micro{opacity:.8}
+.an-hero-bottom{color:#eee4d6;text-shadow:0 1px 12px #0008}
+.an-hero-bottom .an-scroll small,.an-hero-bottom .an-edition{color:#ded2c0}
+.an-hero-bottom .an-down{border-color:#d6c4ab66}
+.an-hero-bottom>p{opacity:.9}
+.an-restoration-copy>p{color:#c5b8a5;text-shadow:0 1px 9px #000}
+.an-restoration-bottom{color:#b4a48d}
+.an-stage-footer{left:0;right:0;padding:0 4.5%;color:#d6c4ab;background:linear-gradient(0deg,#080b0cef,#080b0c70);border-color:#d6c4ab22}
+.an-fracture-note{background:linear-gradient(90deg,#080b0cb3,#080b0c36);border-color:#d6c4ab66}
+.an-detection-evidence{background:linear-gradient(135deg,#080b0ce0,#080b0c9c)}
+.an-risk-evidence{background:linear-gradient(125deg,#111514e8,#0a0c0ca6)}
+.an-response-map{background:radial-gradient(ellipse at center,#080b0c85,transparent 75%)}
+.an-response-result{background:linear-gradient(90deg,#080b0ccc,#080b0c22);padding-top:8px;padding-bottom:8px}
+.an-branch-labels>div{opacity:.6}
+.an-branch-labels>div.is-selected{opacity:1}
+.an-branch-labels strong{background:#080b0cbb}
+.an-bottom-note{color:#cdbca1;text-shadow:0 1px 7px #000}
+.an-header{background:linear-gradient(90deg,color-mix(in srgb,var(--an-atmosphere,#e7dfd1) 72%,transparent),color-mix(in srgb,var(--an-atmosphere,#e7dfd1) 56%,transparent))}
+@media(max-width:760px){
+ .an-art img{object-position:61% center}
+ .an-art-hero img{object-position:56% center}
+ .an-art-metal img{object-position:58% center}
+ .an-art-network img{object-position:64% center}
+ .an-world-wash{background:linear-gradient(90deg,rgba(8,11,12,calc(var(--an-night,0)*.48)),rgba(8,11,12,calc(var(--an-night,0)*.1)) 75%,transparent)}
+ .an-control h1{font-size:14.5vw;top:24%;left:6.5%;text-shadow:0 1px 20px #ead8bd33}
+ .an-control-aside{top:55%;color:#eee4d6}
+ .an-stage-footer{left:0;right:0;padding:0 6%}
+ .an-hero-bottom{bottom:94px}
+ .an-restoration-copy>p{color:#c5b8a5}
+}
+@media(max-height:720px) and (max-width:760px){.an-control h1{top:26%;font-size:14vw}.an-control-aside{top:56%}.an-hero-bottom{bottom:80px}}
+@media(prefers-reduced-motion:reduce){.an-art img{transform:none!important;will-change:auto}.an-art{will-change:auto}}
+@media(max-width:760px){.an-control h1{font-size:11vw;top:22%;line-height:.9}.an-control .an-matter{height:.9em}}

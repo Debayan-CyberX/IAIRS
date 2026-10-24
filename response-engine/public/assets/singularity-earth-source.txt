@@ -1,0 +1,5 @@
+Earth surface texture, rendered on the interactive Three.js globe.
+Source: Three.js r180 examples/textures/planets/earth_atmos_2048.jpg
+Original: https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/textures/planets/earth_atmos_2048.jpg
+Repository license: https://github.com/mrdoob/three.js/blob/r180/LICENSE
+The material renders the map in grayscale. Event positions are schematic and do not claim to geolocate the illustrative traffic.

@@ -1,0 +1,237 @@
+{
+  "policy": "Preserve every existing public asset byte-for-byte. No replacement artwork.",
+  "assets": [
+    {
+      "path": "public/assets/command-environment.webp",
+      "bytes": 357944,
+      "sha256": "5a1bd22601d23231eb52f56e75aace0d1bd849794b1fb3b17662adb1779a7cab",
+      "width": 1774,
+      "height": 887,
+      "kind": "raster artwork"
+    },
+    {
+      "path": "public/assets/fonts.css",
+      "bytes": 3307,
+      "sha256": "bc4f6bb0b629f771a65af2f711500ca12a08227e02986160b473fd1a3016e203",
+      "kind": "font stylesheet"
+    },
+    {
+      "path": "public/assets/ibm-plex-mono-latin-2.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/ibm-plex-mono-latin-3.woff2",
+      "bytes": 14888,
+      "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/inter-latin-1.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/network-activity.webp",
+      "bytes": 314414,
+      "sha256": "e4700ab48ef5511fdf0be7c00264b51fd4fec92ee56f198983d0908dcb2d56ba",
+      "width": 1536,
+      "height": 1024,
+      "kind": "raster artwork"
+    },
+    {
+      "path": "public/assets/network-topology.webp",
+      "bytes": 317944,
+      "sha256": "7134c1b9d2eeb2a1dc8140bb75b9dba8e6993e2d17e7334869e465ae1a404ea0",
+      "width": 1659,
+      "height": 948,
+      "kind": "raster artwork"
+    },
+    {
+      "path": "public/assets/response-core.webp",
+      "bytes": 269456,
+      "sha256": "e7c5a4ac7bb5b71d69a1f65123c5ad114159372672a9a28b5eaa79fb037ef161",
+      "width": 1536,
+      "height": 1024,
+      "kind": "raster artwork"
+    },
+    {
+      "path": "public/assets/space-grotesk-latin-0.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/story-panels.webp",
+      "bytes": 350086,
+      "sha256": "13ee3c87e5ac05e528e5a83b317de336e2b5e2372a63e98823070b63b0324d88",
+      "width": 2172,
+      "height": 724,
+      "kind": "raster artwork"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 220,
+      "sha256": "2a3dca00733a2270a92c15ab730e4ffdafcdbcb589f802671fb8b6fa4095e21d",
+      "kind": "vector"
+    },
+    {
+      "path": "public/assets/dashboard-environment-v2.png",
+      "bytes": 2536309,
+      "sha256": "9b5fa4cd24b4001f2bbe59a60fe1d43e8f5abb23960c9e4e42d78f7c81f790b2",
+      "width": 1672,
+      "height": 941,
+      "kind": "Built-in imagegen reconstruction of the user-supplied dashboard environment panel"
+    },
+    {
+      "path": "public/assets/hero-canyon-clean.png",
+      "bytes": 1910641,
+      "sha256": "7b95c62830dd3e8ce1bcf9c53d578e1bc81f525525f59a9c81b122d16188bbc2",
+      "width": 1536,
+      "height": 1024,
+      "kind": "Built-in imagegen clean canyon backplate; original orb removed for the live 3D engine"
+    },
+    {
+      "path": "public/assets/story-font-licenses.txt",
+      "bytes": 13541,
+      "sha256": "94497bbf560028056c70e4252323d7f676b1bc9b31f2a8a5a73065fff4b10137",
+      "kind": "font licenses"
+    },
+    {
+      "path": "public/assets/dm-mono.ttf",
+      "bytes": 49744,
+      "sha256": "55b4c98f123daebb3ed27947ba47b2af00554fc6284d639a540bcef5e6258ad2",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/moment-chamber.png",
+      "bytes": 2562343,
+      "sha256": "b8017b1712ba27d9a76f5c76b1c8925e82b994f4be9879a76c04920854f1826c",
+      "width": 1536,
+      "height": 1024,
+      "kind": "generated architectural backplate"
+    },
+    {
+      "path": "public/assets/mona-sans.woff2",
+      "bytes": 98124,
+      "sha256": "5ea3740633e5ac7af56c13d7e8ec32bcae12e7723e53d34284469a8947ccb2f3",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/literata-italic.woff2",
+      "bytes": 53728,
+      "sha256": "ab198d6616c7cc966f26a4a5b28a3977dc47439640f09d9b3361226bd465c404",
+      "kind": "font"
+    },
+    {
+      "path": "public/assets/anton-regular.ttf",
+      "bytes": 170812,
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+      "kind": "OFL licensed display font"
+    },
+    {
+      "path": "public/assets/anton-OFL.txt",
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4",
+      "kind": "font license"
+    },
+    {
+      "path": "public/assets/anomaly-console-preview.webp",
+      "bytes": 198982,
+      "sha256": "3b395c0c7fe721d90d260c8a88c455ec8ccd1e27882bcc027a9204b7c23e0b88",
+      "kind": "unaltered existing console browser capture"
+    },
+    {
+      "path": "public/assets/cormorant-garamond.ttf",
+      "bytes": 290236,
+      "sha256": "6d37a86241a25d63f8fe6018b4c083449886b7165c1acb15edd0f574f690ecf7",
+      "kind": "OFL licensed regular serif font"
+    },
+    {
+      "path": "public/assets/cormorant-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "kind": "font license"
+    },
+    {
+      "path": "public/assets/concept-awakening.webp",
+      "bytes": 356828,
+      "sha256": "b428fff84b0077afd017999c668287586342c99bb4dfd7e591df4a9803974867",
+      "width": 1672,
+      "height": 940,
+      "kind": "reference-guided artwork generated with the built-in imagegen tool"
+    },
+    {
+      "path": "public/assets/concept-liquid-metal.webp",
+      "bytes": 441540,
+      "sha256": "54889d98b12bdd9038bf9e53adf06dbf45f699aec83a738f69467844ceaa6e07",
+      "width": 1672,
+      "height": 940,
+      "kind": "reference-guided artwork generated with the built-in imagegen tool"
+    },
+    {
+      "path": "public/assets/concept-data-field.webp",
+      "bytes": 354172,
+      "sha256": "366c745ee1f7f31c2144a7ef5909ddda2e22ddd4b5a1fc3d31a2cccac0a3de37",
+      "width": 1672,
+      "height": 940,
+      "kind": "reference-guided artwork generated with the built-in imagegen tool"
+    },
+    {
+      "path": "public/assets/concept-response.webp",
+      "bytes": 388578,
+      "sha256": "22823622403466147c5d01775a094e7fe4572296da4093483751a723af5511e6",
+      "width": 1672,
+      "height": 940,
+      "kind": "reference-guided artwork generated with the built-in imagegen tool"
+    },
+    {
+      "path": "public/assets/concept-awakening-mobile.webp",
+      "bytes": 336320,
+      "sha256": "25ec9a5d833e2f59cc837be87f0a535afa74d109a903ba2d79fe308a09e50714",
+      "width": 940,
+      "height": 1672,
+      "kind": "reference-guided portrait artwork generated with the built-in imagegen tool"
+    },
+    {
+      "path": "public/assets/singularity-studio-source.txt",
+      "bytes": 334,
+      "sha256": "30137492d9d466b5fbbb004d995ccc7dab7218b2aae293f048b5727ea67045c7",
+      "kind": "asset provenance"
+    },
+    {
+      "path": "public/assets/singularity-studio.hdr",
+      "bytes": 1686299,
+      "sha256": "30933d55e45f0795daf49f3cbefbe0e5ebcb821ee04fb0a2818c02ffc3938817",
+      "kind": "HDR reflection environment",
+      "source": "https://polyhaven.com/a/studio_small_03",
+      "license": "CC0"
+    },
+    {
+      "path": "public/assets/singularity-earth-source.txt",
+      "bytes": 450,
+      "sha256": "43f1b70c449c76a3b7cd0524429950cdd840dbb3224a3b78c8487f00487df97e",
+      "kind": "asset provenance"
+    },
+    {
+      "path": "public/assets/singularity-earth.jpg",
+      "bytes": 512606,
+      "sha256": "2faa400d1eade3bc44caf6750d1b772bd9bbb6d87362c02bc7c3304e78fa0a9d",
+      "kind": "globe surface texture",
+      "width": 2048,
+      "height": 1024,
+      "source": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/textures/planets/earth_atmos_2048.jpg"
+    },
+    {
+      "path": "public/assets/cormorant-garamond-italic.woff2",
+      "bytes": 23660,
+      "sha256": "e48e58027030df56869b795ca6f19b7012158275f7ad7cde1900b4a0b68d02e2",
+      "kind": "Latin italic typeface",
+      "source": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd58jD-iNM8.woff2",
+      "upstream": "https://github.com/google/fonts/tree/main/ofl/cormorantgaramond",
+      "license": "SIL Open Font License 1.1; public/assets/cormorant-OFL.txt"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+# Reference artwork and generation prompts
+
+Tool: built-in `image_gen.imagegen`, not the CLI or a one-off API runner.
+
+Reference: the user's `IAIRS Cinematic Cybersecurity Storyboard.png`, including the supplied Hero Details, Motion References, and Transition Examples close-ups. These are reference-guided recreations for use as live shader textures, not extracted original scene renders. All earlier application artwork is preserved unchanged.
+
+Generated PNG originals remain under the tool's `C:/Users/shivl/.codex/generated_images/` output. The project versions are WebP encodings at quality 0.94, with no compositional edits during conversion:
+
+| Asset | Project path | Dimensions |
+| --- | --- | --- |
+| Suspended monolith | `public/assets/concept-awakening.webp` | 1672 × 940 |
+| Portrait monolith | `public/assets/concept-awakening-mobile.webp` | 940 × 1672 |
+| Molten material | `public/assets/concept-liquid-metal.webp` | 1672 × 940 |
+| Detection filaments | `public/assets/concept-data-field.webp` | 1672 × 940 |
+| Response chamber | `public/assets/concept-response.webp` | 1672 × 940 |
+
+## Hero prompt
+
+Use case: ads-marketing. Asset type: photorealistic website hero background, wide 16:9. Reference image: the attached IAIRS Cinematic Cybersecurity Storyboard; faithfully recreate ONLY its bottom-left 'HERO DETAILS (ACT 00)' artwork as a clean, extremely high resolution full-bleed scene, expanded to widescreen. Preserve the exact composition: a single massive suspended black obsidian monolith slightly right of center, elongated rectangular bevelled form with a pointed lower bevel, one very bright thin warm ivory vertical seam down its front continuing as a beam toward the rocky ground. Surrounding environment is an enormous dark geological canyon with towering sleek black cliff architecture, a hazy pale champagne sky, distant layered mountains on the left, highly detailed jagged black mineral ground in the foreground with small reflective rock fragments, soft volumetric rays and realistic cinematic atmospheric depth. Strong angular morning light from rear right, pale champagne/gold highlights, richly textured obsidian, deep dark shadows. Keep the left 40% of the image relatively open pale dusty sky and distant mountains for live HTML headline overlay. Match the supplied artwork's premium photographic, ray-traced material finish as closely as possible. This must look like the SAME world, not a redesign. No polygonal low-detail geometry, no cartoon, no simplistic pillars. NO TEXT of any kind, no logo, no UI, no labels, no border, no montage, no watermark. Generate one finished landscape image, maximum useful detail.
+
+## Liquid metal prompt
+
+Use case: ads-marketing. Asset type: widescreen 16:9 website background, no text. Faithfully recreate the supplied IAIRS storyboard's MOTION REFERENCES first and third panels: molten champagne-colored liquid metal, luxurious flowing ribbons of mirrored gold and polished silver, silky sweeping S curves folding and twisting around a dark void, extremely fine fluid striations and layered highlights like the original. It should be the same materials and sculptural liquid flow seen in the supplied image, photorealistic premium cinema finish, NOT geometric polygon ribbons. Composition: elegant very detailed large liquid-metal sculpture concentrated on the RIGHT half, arcing from bottom center up to upper right, dark obsidian negative space across the left 40 percent for live text. Fine restrained red signal tracing a single flowing line through the metal. Extreme contrast, warm champagne reflections against black, exquisite realistic specular detail, deep spatial layering. Preserve the visual language of the user's reference closely. No text, numbers, UI, logos, watermark, border, montage, collage, low-poly geometry, or cartoon. One finished landscape artwork.
+
+## Data field prompt
+
+Use case: ads-marketing. Asset type: landscape 16:9 cinematic website background. Reference: the supplied IAIRS storyboard. Recreate its ACT 02 DETECTION panel and MOTION REFERENCES PROCEDURAL DATA FIELDS faithfully as a full widescreen artwork, with no text or UI. A dense elegant flowing bundle of thousands of hair-thin luminous ivory and silver filaments curves diagonally through deep obsidian space; the bundle is warped into fluid S curves, broad layered data ribbons and long delicate network strands. A single intense red anomaly glows at their convergence near 67% image width and 51% image height, with precise red nodes and very sparse warm ember sparks connected to the same signal. Photorealistic physically lit filaments, microscopic silver specular glints, rich 3D depth, restrained cinematic bloom, deep black background. Keep left 33% mostly black for live headings, right two thirds filled with the beautiful intricate data field. This must look like the exact visual world and material quality of the reference, NOT a stock globe, NOT a neural blob, NOT a flat vector graphic, NOT polygons. No words, numbers, labels, dashboards, cards, logos, borders or watermark. One finished high detail landscape image.
+
+## Response prompt
+
+Use case: ads-marketing. Asset type: widescreen 16:9 website background artwork. Faithfully recreate the user's IAIRS storyboard ACT 04 RESPONSE artwork and the transition example DATA TO 3D SPACE, with no UI or text. Deep black cavernous architectural chamber with towering glossy obsidian walls and narrow champagne vertical light seams, mineral ground with exquisitely realistic wet black reflections. On the right half is a beautiful sculptural containment instrument made from intersecting slender metallic elliptical tracks, glowing fine circular red paths, a small hovering red signal at the center and a few very fine suspended silver structural lines. Match the response panel: a tall elegant spatial structure with flowing polished dark gold/champagne metal curves and controlled warm red illumination. Light and metal details must be photographic, glossy, cinematic, and richly detailed exactly like the supplied concept art; not a simplistic 3D viewport. Camera is low and wide, immense depth and volumetric haze, warm narrow shafts of architectural light. Left 40% is dark uncluttered negative space for live headings. No text, typography, numbers, fabricated interface, boxes, dashboards, logos, borders, collage, watermark, cartoon, or low-poly geometry. One finished high detail landscape scene.
+
+## Mobile hero prompt
+
+Input: the generated widescreen hero, preserving its material identity.
+
+Create a PORTRAIT 9:16 mobile crop/composition of this EXACT supplied monolith artwork. Preserve the identical photographic obsidian materials, monolith shape, bright champagne vertical seam, deep rocky canyon, pale sky, warm morning light and all of the atmosphere. Reframe vertically: the enormous suspended monolith occupies the RIGHT THIRD from the upper middle to the lower middle; its seam is clearly visible. Leave the LEFT 65% of the UPPER HALF mostly pale warm ivory sky and distant soft mountains, intentionally open for black headline text that will be overlaid in HTML. The lower third is the rich black mineral foreground and distant mist valley. Keep the same ultra-detailed high quality art, not a reinterpretation or simplified rendering. No text, logos, UI, labels, borders, or watermark. One finished portrait artwork for the same website's mobile hero.

@@ -1,0 +1,31 @@
+{
+  "name": "iairs-response-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --check src/main.js && node --check src/visuals.js && node --check src/hero.js && node --check src/simulation.js && node --check src/pages.js && node --check src/command.js && node --check src/components.js && node --check src/workspace.js && node --check src/traffic.js && node --check src/motion.js && node asset-integrity.mjs && node --check src/journey.js && node --check src/experience.js && node --check src/world.js && node --check src/journey-data.js && node --check src/optical-scene.js && node --check src/anomaly.js && node --check src/anomaly-director.js && node --check src/artwork-stage.js && node --check src/signal-stage.js && node --check src/signal-field.js && node --check src/signal-particles.js && node --check src/signal-distance.js && node --check src/signal-ribbons.js && node --check src/signal-ribbon-shape.js && node --check src/storyboard.js && node --check src/storyboard-director.js && node --check src/singularity-world.js && node --check src/singularity-portal.js && node --check src/singularity-lanes.js && node --check src/singularity-membrane.js && node --check src/singularity-particles.js && node --check src/singularity-analysis.js && node --check src/singularity-loader.js && node --check src/singularity-loading-form.js && node --check src/singularity-reveal.js",
+    "test": "node verify.mjs",
+    "test:enhancements": "node verify-enhancements.mjs",
+    "test:motion": "node verify-console-motion.mjs",
+    "test:landing": "node verify-anomaly.mjs",
+    "test:experience": "node verify-anomaly.mjs",
+    "test:moment": "node verify-anomaly.mjs",
+    "test:anomaly": "node verify-anomaly.mjs",
+    "test:cinematic": "node verify-procedural.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "lucide": "^0.468.0",
+    "gsap": "3.15.0",
+    "lenis": "1.3.27",
+    "postprocessing": "6.39.5"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1",
+    "@playwright/test": "^1.56.0"
+  }
+}

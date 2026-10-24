@@ -1,0 +1,8 @@
+response-engine/node_modules/
+response-engine/dist/
+response-engine/test-results/
+response-engine/playwright-report/
+response-engine/.sites/
+response-engine/.env*
+*.tar.gz
+*.zip

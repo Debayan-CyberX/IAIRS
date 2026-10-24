@@ -1,0 +1,16 @@
+import { createIcons, Activity, ArrowRight, ArrowUpRight, ArrowDown, ArrowLeft, Bell, Moon, Sun, Search, Settings, Shield, ShieldCheck, ShieldAlert, House, ChartNoAxesCombined, Network, Workflow, FlaskConical, FileText, Radio, SlidersHorizontal, Cpu, Database, ScanLine, Menu, X, ChevronDown, ChevronRight, Check, CheckCheck, Download, Copy, Fingerprint, Waves, Globe, LockKeyhole, CircleHelp, Play, Pause, RefreshCw, CircleDot, Clock, Target, Layers, Monitor, TriangleAlert, LoaderCircle, ExternalLink, LogOut, CircleCheck, Filter } from 'lucide';
+const icons = { Activity, ArrowRight, ArrowUpRight, ArrowDown, ArrowLeft, Bell, Moon, Sun, Search, Settings, Shield, ShieldCheck, ShieldAlert, House, ChartNoAxesCombined, Network, Workflow, FlaskConical, FileText, Radio, SlidersHorizontal, Cpu, Database, ScanLine, Menu, X, ChevronDown, ChevronRight, Check, CheckCheck, Download, Copy, Fingerprint, Waves, Globe, LockKeyhole, CircleHelp, Play, Pause, RefreshCw, CircleDot, Clock, Target, Layers, Monitor, TriangleAlert, LoaderCircle, ExternalLink, LogOut, CircleCheck, Filter };
+export const icon = (name, className = '') => `<i data-lucide="${name}" class="${className}" aria-hidden="true"></i>`;
+export function hydrate() { createIcons({ icons, attrs: { 'stroke-width': 1.5 } }); }
+export const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+export function severityPill(severity) { return `<span class="severity severity-${severity.toLowerCase()}">${icon(severity === 'Critical' ? 'shield-alert' : 'circle-dot')}${severity}</span>`; }
+export function toast(message) { const element = document.querySelector('#toast'); element.textContent = message; element.classList.add('show'); clearTimeout(toast.timer); toast.timer = setTimeout(() => element.classList.remove('show'), 4000); }
+export function modal(title, content, wide = false) { const element = document.querySelector('#modal'); element.classList.toggle('modal-wide', wide); element.innerHTML = `<button class="icon-button modal-close" data-action="close-modal" aria-label="Close dialog">${icon('x')}</button><h2 id="modal-title">${title}</h2>${content}`; hydrate(); if (!element.open) element.showModal(); }
+export function download(name, contents, type = 'text/plain') { const link = document.createElement('a'); const url = URL.createObjectURL(new Blob([contents], { type })); link.href = url; link.download = name; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1500); }
+export function sparkline(values, color = '#bba98b') {
+  const points = values.length > 1 ? values : [0, ...values, 0];
+  const max = Math.max(...points, 1), min = Math.min(...points, 0);
+  const path = points.map((n, i) => `${i ? 'L' : 'M'}${(i / (points.length - 1) * 125).toFixed(1)} ${(32 - (n - min) / (max - min || 1) * 28).toFixed(1)}`).join(' ');
+  return `<svg class="sparkline" viewBox="0 0 125 36" aria-hidden="true"><path d="${path} L125 36 L0 36Z" fill="${color}" opacity=".08"/><path d="${path}" fill="none" stroke="${color}" stroke-width="1"/></svg>`;
+}
+export function pageHeading(eyebrow, title, subtitle, actions = '') { return `<div class="app-page-heading"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1><p>${subtitle}</p></div><div class="page-actions">${actions}</div></div>`; }

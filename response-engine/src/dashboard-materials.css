@@ -1,0 +1,43 @@
+/* The user's board supplies the landscape; these surfaces follow its material row. */
+body.console-mode{background:#080a0b;isolation:isolate}
+body.console-mode:before,body.console-mode:after{display:none}
+body.console-mode #app{position:relative;z-index:0;isolation:isolate}
+.dashboard-environment{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;contain:strict;background:#090c0e}
+.dashboard-landscape{position:absolute;inset:50px -2% -2%;opacity:.92;transform-origin:55% 40%;filter:saturate(.55) contrast(1.06)}
+.dashboard-landscape>img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 57%}
+.dashboard-environment-shade{position:absolute;inset:0;background:linear-gradient(180deg,#05090b38,#060a0c10 26%,#060a0c29 63%,#05090b77),linear-gradient(90deg,#05090b5c,transparent 22%,transparent 75%,#05090b40)}
+.dashboard-light-ribbons{position:absolute;inset:6% -5% 0;width:110%;height:85%;opacity:.48;filter:drop-shadow(0 0 5px #d3d6cf38)}
+.dashboard-volumetric-light{position:absolute;inset:-20%;opacity:.56;background:linear-gradient(117deg,transparent 34%,#e3e4dc03 37%,#d6d8d016 39%,#d6d8d003 43%,transparent 47%),radial-gradient(ellipse at 75% 0,#bfd3e91c,transparent 50%)}
+body.console-mode .app-topbar{background:linear-gradient(115deg,#080c0de8,#414a4bb0 44%,#0a0f11e8 80%);border-bottom-color:#cdc7b46b;box-shadow:inset 0 1px 0 #f2e9d42e,inset 0 -1px 0 #080909,0 8px 30px #0008;backdrop-filter:blur(20px) saturate(.65)}
+body.console-mode .app-sidebar{background:linear-gradient(118deg,#3b444439,#0a1013a3 38%,#070b0ed1);border-color:#c8c2b15c;box-shadow:inset -1px 0 0 #d0cab617,15px 0 35px #0005;backdrop-filter:blur(16px) saturate(.55)}
+body.console-mode .app-sidebar nav a.active{background:linear-gradient(116deg,#d9c6a653,#62747b6b 48%,#17232bbd);border-color:#d2c4ad94;box-shadow:inset 0 1px 0 #f4e7c747,inset 0 -1px 0 #ffffff0c,0 0 22px #d9bf8e12,0 8px 15px #0005}
+body.console-mode .app-sidebar nav a.active:before{background:#f4e6c7;box-shadow:0 0 16px #e6c399a3}
+body.console-mode .glass-panel{background:radial-gradient(ellipse at 95% 0,#889fc41a,transparent 45%),linear-gradient(128deg,#364247b0,#080d11de 37%,#080d10ed 76%,#41474491);border-color:#c0bfa76e;box-shadow:inset 0 1px 0 #efe8d538,inset 1px 0 0 #bfc9cc13,inset 0 -1px 0 #030606a6,0 12px 30px #0008;backdrop-filter:blur(18px) saturate(.6)}
+body.console-mode .glass-panel:hover{border-color:#d3c7b092}
+body.console-mode .panel-heading{border-bottom-color:#bfbbab21;background:linear-gradient(115deg,#ddd6c008,transparent 55%,#a9a8d508)}
+body.console-mode .metric-card{background:linear-gradient(122deg,#82918d24,#131c20c9 38%,#090f13de);border-color:#b6bbae66;box-shadow:inset 0 1px 0 #e4dec932,0 8px 20px #0005}
+body.console-mode .command-stat-strip{background:#0b1216a8;border-color:#d0c6ac80;backdrop-filter:blur(17px)}
+body.console-mode .global-search,body.console-mode .filter-search{background:linear-gradient(120deg,#111c21c9,#090e12b3);border-color:#a3aaa16b;box-shadow:inset 0 1px 4px #0009,0 1px 0 #eee7ce1c}
+body.console-mode .silver-button{background:linear-gradient(172deg,#e7e1cd8f 0%,#9ca7ac70 13%,#3e505e8c 48%,#a2a49a70 94%,#d8cfb894);border-color:#ebe1c5ad;box-shadow:inset 0 1px 0 #fff3,0 0 18px #b9b3ce13,0 4px 12px #0007;color:#f6f1e6}
+body.console-mode .silver-button:hover{border-color:#f3e8cd;box-shadow:inset 0 1px 0 #fff5,0 0 22px #d5c6a32b,0 4px 12px #0007}
+body.console-mode .workspace-tabs button.active,body.console-mode .command-view-switch button.active{background:linear-gradient(135deg,#afb7b563,#68788880 45%,#49455f6b);border-color:#b9bdd4a1;box-shadow:inset 0 1px 0 #f1ecd247,0 0 15px #b7b6f11a}
+body.console-mode .engine-machine,body.console-mode .lab-live-stat{background:linear-gradient(140deg,#adc4cc1f,#10171fc2 45%,#181925d9);border-color:#b7c8cf61;box-shadow:inset 0 1px 0 #e9e4cd33,0 10px 20px #0007}
+body.console-mode .donut>span,body.console-mode .risk-dial>div{background:radial-gradient(circle at 30% 15%,#303a3c,#080c10 68%);box-shadow:inset 0 1px 0 #d5ddda2b,0 0 10px #0006}
+body.command-mode .command-hero{background:linear-gradient(90deg,#060b0fd9,transparent 39%,transparent 75%,#060b0f4d)}
+body.command-mode .command-world{mask-image:none}
+body.command-mode .command-right:before{background:linear-gradient(155deg,#242e3330,#03080b77);border-color:#c7c0ab4a}
+body.console-mode .motion-ambient-light{background:radial-gradient(ellipse at 60% 20%,#e6e0ca0b,transparent 65%)}
+body.console-mode .app-page-heading{position:relative;text-shadow:0 2px 18px #000;isolation:isolate}
+body.console-mode .app-page-heading:before{content:'';position:absolute;inset:-14px -14px;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#070c0ea1,transparent 80%);border-radius:5px}
+body.console-mode .command-hero:after{background:linear-gradient(90deg,#050a0d5c,transparent 45%),linear-gradient(0deg,#060b0d26,transparent 26%)}
+[data-motion="on"] .dashboard-landscape{animation:dashboard-landscape-drift 30s ease-in-out infinite alternate}
+[data-motion="on"] .dashboard-ribbon-pulses>path{animation:dashboard-ribbon-flow 22s linear infinite;animation-delay:var(--ribbon-delay,0s)}
+[data-motion="on"] .dashboard-volumetric-light{animation:dashboard-light-drift 25s ease-in-out infinite alternate}
+@keyframes dashboard-landscape-drift{to{transform:scale(1.035) translate(-.45%,.4%)}}
+@keyframes dashboard-ribbon-flow{to{stroke-dashoffset:-240}}
+@keyframes dashboard-light-drift{to{translate:2% -1%;opacity:.27}}
+.motion-paused .dashboard-environment *{animation:none!important}
+.low-light .dashboard-landscape{opacity:.54}
+@media(max-width:900px){.dashboard-light-ribbons{opacity:.3}}
+@media(max-width:760px){.dashboard-landscape{inset:54px -12% 0;opacity:.72}.dashboard-landscape>img{object-position:60% center}.dashboard-volumetric-light{opacity:.3}body.console-mode .glass-panel{backdrop-filter:blur(12px);background:linear-gradient(125deg,#334046c9,#090e12e8 46%,#151b21e0)}}
+@media(prefers-reduced-motion:reduce){.dashboard-environment *{animation:none!important}}
