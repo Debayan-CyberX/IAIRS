@@ -4,6 +4,8 @@ A working IAIRS simulation with The Anomaly, a six-act editorial landing experie
 
 Hosted site: https://iairs-response-engine.palefly10.chatgpt.site
 
+GitHub Pages: https://debayan-cyberx.github.io/IAIRS/
+
 ## Run locally
 
 ```powershell
