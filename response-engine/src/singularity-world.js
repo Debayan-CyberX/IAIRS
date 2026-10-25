@@ -25,7 +25,7 @@ export function createStoryboardWorld(host,{onAsset=()=>{}}={}){
   manager.onProgress=url=>onAsset(url.includes('earth')?'earth':'environment');manager.onLoad=()=>resolveAssets();
   const globe=createThreatGlobe(root,invalidate,manager),riskInstrument=createRiskInstrument(root),reveal=createRevealEnvironment(scene,globe);
   const portal=createPortal(scene,()=>{host.dataset.portal='procedural';invalidate();});
-  new RGBELoader(manager).load('/assets/singularity-studio.hdr',texture=>{if(disposed){texture.dispose();return;}const generator=new THREE.PMREMGenerator(renderer);environment=generator.fromEquirectangular(texture);scene.environment=environment.texture;generator.dispose();texture.dispose();invalidate();},undefined,()=>{});
+  new RGBELoader(manager).load(`${import.meta.env.BASE_URL}assets/singularity-studio.hdr`,texture=>{if(disposed){texture.dispose();return;}const generator=new THREE.PMREMGenerator(renderer);environment=generator.fromEquirectangular(texture);scene.environment=environment.texture;generator.dispose();texture.dispose();invalidate();},undefined,()=>{});
   scene.add(new THREE.HemisphereLight(0xe5e0d4,0x070b0d,.7));
   const key=new THREE.DirectionalLight(0xffe6bc,3.5);key.position.set(-3,5,4);scene.add(key);
   const rim=new THREE.DirectionalLight(0xdde5e3,4);rim.position.set(3,-1,-4);scene.add(rim);

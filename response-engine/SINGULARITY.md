@@ -38,3 +38,7 @@ The detection chapter has one dominant observed count, actual elapsed time and a
 Text and actions in the final chapter are withheld until the outgoing assessment text has cleared. The physical monitor, portal, animated backgrounds, approved centered second chapter and hover-only evidence behavior are retained. The preview receives typography and surface treatments without changing the existing standalone workspace.
 
 References studied in the browser: https://www.exoape.com/ (statement scale and negative space), https://studiofreight.com/ (serif voice, index hierarchy and sparse controls), https://lusion.co/ (visual prominence and short supporting copy). The reference screenshots are local review artifacts under ignored test-results. These are design observations, not claims of reproducing their sites or receiving an award.
+
+## GitHub Pages asset paths
+
+The project is served under `/IAIRS/`. Runtime texture loaders and dashboard image markup use Vite's `BASE_URL`; stylesheet asset URLs are processed by Vite. The original public font sheet is imported into the source CSS bundle so its font requests also receive the deployment base, while all 33 public assets remain unchanged. A production-build browser check covers the globe surface and lighting, all three hover/tap annotations, fonts and the final console backdrop on desktop and mobile.

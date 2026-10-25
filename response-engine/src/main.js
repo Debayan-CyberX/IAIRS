@@ -22,6 +22,8 @@ import { overview, incidentTable } from './components.js';
 import { NAV, shell, dashboardEnvironment, overviewPage, incidentsPage, filterIncidents, analysisPage, networkPage, responsePage, demoPage, resultHTML, reportsPage, settingsPage, detailPage } from './pages.js';
 import { SCENARIOS, STAGES, loadState, saveState, initialState, createEvents, evaluateEvents, time, date, reportHTML } from './simulation.js';
 
+import './github-pages-assets.css';
+
 let state=loadState();saveState(state);
 let cleanups=[],layout='',renderId=0,activeSection='overview',scenario='port',running=false,runToken=0,lastResult=null,selectedStage=0,detailTab='Overview',detailId=null;
 let commandView='live',activityTab='all',storyboardPreview=null;

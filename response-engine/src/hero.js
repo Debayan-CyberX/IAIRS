@@ -150,7 +150,7 @@ export function mountHero3D(hero){
     backdropUniforms.pointer.value.set(smoothX*5,smoothY*3);backdropUniforms.elapsed.value=elapsed;
     if(ready){art.dataset.sceneTime=elapsed.toFixed(2);art.dataset.orbRotation=assembly.rotation.y.toFixed(3);renderer.render(scene,camera);art.dataset.sceneTriangles=String(renderer.info.render.triangles);}
   },resize);
-  new THREE.TextureLoader().load('/assets/response-core.webp',texture=>{
+  new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}assets/response-core.webp`,texture=>{
     if(disposed){texture.dispose();return;}sourceTexture=texture;texture.colorSpace=THREE.SRGBColorSpace;backdropUniforms.image.value=texture;backdrop.visible=true;
     const next=studioEnvironment(renderer,texture);reflection.dispose();reflection=next;scene.environment=next.texture;
     ready=true;art.classList.add('hero-model-active');art.dataset.liveScene='hero-3d';art.tabIndex=0;art.setAttribute('aria-label','Interactive polished titanium response engine. Drag the orb or use arrow keys to rotate.');canvas.hidden=false;

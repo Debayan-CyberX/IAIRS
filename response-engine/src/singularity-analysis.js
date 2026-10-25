@@ -10,7 +10,7 @@ export function createThreatGlobe(root,invalidate,manager){
       float terrain=dot(diffuseColor.rgb,vec3(.299,.587,.114));diffuseColor.rgb=vec3(terrain)*vec3(.84,.91,.94);`);
   };
   const globe=new THREE.Mesh(new THREE.SphereGeometry(2,112,80),material);root.add(globe);
-  new THREE.TextureLoader(manager).load('/assets/singularity-earth.jpg',map=>{if(disposed){map.dispose();return;}texture=map;map.colorSpace=THREE.SRGBColorSpace;map.anisotropy=8;material.map=map;material.needsUpdate=true;invalidate();},undefined,()=>{});
+  new THREE.TextureLoader(manager).load(`${import.meta.env.BASE_URL}assets/singularity-earth.jpg`,map=>{if(disposed){map.dispose();return;}texture=map;map.colorSpace=THREE.SRGBColorSpace;map.anisotropy=8;material.map=map;material.needsUpdate=true;invalidate();},undefined,()=>{});
   const rimMaterial=new THREE.ShaderMaterial({transparent:true,depthWrite:false,side:THREE.BackSide,uniforms:{uOpacity:{value:0}},
     vertexShader:`varying vec3 vNormal,vView;void main(){vec4 mv=modelViewMatrix*vec4(position,1.);vNormal=normalize(normalMatrix*normal);vView=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}`,
     fragmentShader:`uniform float uOpacity;varying vec3 vNormal,vView;void main(){float rim=pow(1.-abs(dot(normalize(vNormal),normalize(vView))),3.5);gl_FragColor=vec4(vec3(.56,.64,.65),rim*uOpacity*.32);}`});

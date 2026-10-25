@@ -77,7 +77,7 @@ export function createWorld(stage){
   if(delta>.055)slowFrames++;else slowFrames=Math.max(0,slowFrames-1);if(slowFrames>90&&ratio>1.5){ratio=Math.max(1.5,ratio-.1);renderer.setPixelRatio(ratio);composer?.setSize(width,height);slowFrames=0;stage.dataset.pixelRatio=ratio.toFixed(1);}
  }
  canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();if(disposed)return;lost=true;stage.dataset.fallback='true';delete stage.dataset.ready;},{signal:abort.signal});
- new THREE.TextureLoader().load('/assets/moment-chamber.png',texture=>{if(disposed){texture.dispose();return;}texture.colorSpace=THREE.SRGBColorSpace;textures.push(texture);backdropUniforms.uImage.value=texture;const previous=reflection;reflection=environment(renderer,texture);scene.environment=reflection.texture;previous.dispose();ready=true;stage.dataset.ready='true';if(lastInput)draw(lastInput,0);},undefined,()=>stage.dataset.fallback='true');
+ new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}assets/moment-chamber.png`,texture=>{if(disposed){texture.dispose();return;}texture.colorSpace=THREE.SRGBColorSpace;textures.push(texture);backdropUniforms.uImage.value=texture;const previous=reflection;reflection=environment(renderer,texture);scene.environment=reflection.texture;previous.dispose();ready=true;stage.dataset.ready='true';if(lastInput)draw(lastInput,0);},undefined,()=>stage.dataset.fallback='true');
  resize();
  return{draw,resize,dispose(){if(disposed)return;disposed=true;abort.abort();choreography?.kill();composer?.dispose();reflection.dispose();disposeScene(scene,renderer,textures);delete stage.dataset.ready;}};
 }
